@@ -1,0 +1,189 @@
+[
+  {
+    "id": 1,
+    "name": "Bounty",
+    "ingredients": [
+      {
+        "name": "fromage frais",
+        "qty": 11.67,
+        "unit": "g",
+        "optionnel": false
+      },
+      { "name": "poudre amande", "qty": 3.33, "unit": "g", "optionnel": true },
+      { "name": "coco râpée", "qty": 16.67, "unit": "g", "optionnel": false },
+      { "name": "miel", "qty": 0.5, "unit": "c.s", "optionnel": false },
+      { "name": "chocolat", "qty": 30, "unit": "g", "optionnel": false }
+    ],
+    "steps": [
+      "Tout mélanger",
+      "au congélateur 30 minutes",
+      "fondre le choco",
+      "trempez la pâte puis remettre au congélateur"
+    ],
+    "notes": [],
+    "four": { "chaleur": 0, "mode": "", "durée": 0 }
+  },
+  {
+    "id": 2,
+    "name": "4 Quart",
+    "ingredients": [
+      { "name": "farine", "qty": 31.2, "unit": "g", "optionnel": false },
+      { "name": "sucre", "qty": 31.2, "unit": "g", "optionnel": false },
+      { "name": "beurre", "qty": 31.2, "unit": "g", "optionnel": false },
+      { "name": "œufs", "qty": 0.5, "unit": "pcs", "optionnel": false }
+    ],
+    "steps": ["tout mélanger puis mettre au four"],
+    "notes": "un oeuf fait environ 60g",
+    "four": { "chaleur": 180, "mode": "chaleur tournante", "durée": 35 }
+  },
+  {
+    "id": 3,
+    "name": "Gâteau choco variante 1",
+    "ingredients": [
+      { "name": "chocolat", "qty": 33.4, "unit": "g", "optionnel": false },
+      { "name": "beurre", "qty": 16.6, "unit": "g", "optionnel": false },
+      { "name": "farine", "qty": 8.4, "unit": "g", "optionnel": false },
+      { "name": "sucre", "qty": 16.6, "unit": "g", "optionnel": false },
+      { "name": "œufs", "qty": 0.6, "unit": "pcs", "optionnel": false }
+    ],
+    "steps": [
+      "mélanger les œufs, le sucre et la farine",
+      "fondre le choco et le beurre (feu doux)",
+      "mélanger le tout"
+    ],
+    "notes": "",
+    "four": { "chaleur": 180, "mode": "chaleur tournante", "durée": 30 }
+  },
+  {
+    "id": 9,
+    "name": "Gâteau choco variante 2",
+    "ingredients": [
+      { "name": "chocolat", "qty": 33.4, "unit": "g", "optionnel": false },
+      { "name": "beurre", "qty": 16.6, "unit": "g", "optionnel": false },
+      { "name": "farine", "qty": 8.4, "unit": "g", "optionnel": false },
+      { "name": "sucre", "qty": 16.6, "unit": "g", "optionnel": false },
+      { "name": "poudre amande", "qty": 16.6, "unit": "g", "optionnel": false },
+      { "name": "œufs", "qty": 0.6, "unit": "pcs", "optionnel": false }
+    ],
+    "steps": [
+      "mélanger les œufs, le sucre, la poudre d'amande et la farine",
+      "fondre le choco et le beurre (feu doux)",
+      "mélanger le tout"
+    ],
+    "notes": "",
+    "four": { "chaleur": 180, "mode": "chaleur tournante", "durée": 30 }
+  },
+  {
+    "id": 4,
+    "name": "Tiramisu",
+    "ingredients": [
+      { "name": "œufs", "qty": 0.75, "unit": "pcs", "optionnel": false },
+      { "name": "sucre", "qty": 18.8, "unit": "g", "optionnel": false },
+      { "name": "mascarpone", "qty": 62.6, "unit": "g", "optionnel": false },
+      { "name": "biscuits", "qty": 6, "unit": "pcs", "optionnel": false },
+      { "name": "tasse de café", "qty": 0, "unit": "", "optionnel": false },
+      { "name": "poudre de cacao", "qty": 0, "unit": "", "optionnel": false }
+    ],
+    "steps": [
+      "Mélanger les jaunes avec le sucre, ajoutez le mascarpone quand le mélange est blanchâtre",
+      "monter les blancs en neige. Les incorporer progressivement au mélange",
+      "Dans un plat, tapisser de biscuits trempez dans le café, mettre une couche de la crème. Répeter jusqu'à ne plus avoir de crème",
+      "Saupoudrer de cacao puis laisser reposer au frigo  min. 2h"
+    ],
+    "notes": "",
+    "four": { "chaleur": 0, "mode": "", "durée": 0 }
+  },
+  {
+    "id": 5,
+    "name": "Cookies",
+    "ingredients": [
+      { "name": "œuf", "qty": 0.2, "unit": "pcs", "optionnel": false },
+      { "name": "sucre", "qty": 1.6, "unit": "g", "optionnel": false },
+      { "name": "beurre", "qty": 4, "unit": "g", "optionnel": false },
+      { "name": "cassonade", "qty": 2.6, "unit": "g", "optionnel": false },
+      { "name": "farine", "qty": 4.4, "unit": "g", "optionnel": false },
+      { "name": "cacao", "qty": 0.6, "unit": "g", "optionnel": false },
+      { "name": "pépites choco", "qty": 3.4, "unit": "g", "optionnel": false },
+      { "name": "sel", "qty": 0.008, "unit": "càc", "optionnel": false },
+      {
+        "name": "bicarbonate de soude",
+        "qty": 0.016,
+        "unit": "càc",
+        "optionnel": true
+      }
+    ],
+    "steps": [
+      "ramolir le beurre (ne pas faire fondre)",
+      "fouettez le beurre mou, la cassonade et le sucre. Quand aspect crémeux, ajouter les œufs",
+      "Ajoutez la farine, le cacao, le sel. Mélanger puis ajoutez les pépites ",
+      "Faire des boules de pâtes sur du papier sulfurisé (±25g)",
+      "8' (fondant) - 12' (croustillant) au four. Laissez refroidir"
+    ],
+    "notes": ["8 minutes -> fondant", "12 minutes -> croustillant"],
+    "four": { "chaleur": 180, "mode": "chaleur tournante", "durée": 8 }
+  },
+  {
+    "id": 6,
+    "name": "Cake citron",
+    "ingredients": [
+      { "name": "sucre", "qty": 40, "unit": "g", "optionnel": false },
+      { "name": "beurre", "qty": 24, "unit": "g", "optionnel": false },
+      {
+        "name": "citron (+zeste)",
+        "qty": 0.4,
+        "unit": "pcs",
+        "optionnel": false
+      },
+      { "name": "œufs", "qty": 0.6, "unit": "pcs", "optionnel": false },
+      { "name": "farine", "qty": 30, "unit": "g", "optionnel": false },
+      { "name": "sucre glace", "qty": 26, "unit": "g", "optionnel": false },
+      {
+        "name": "levure chimique",
+        "qty": 0.1,
+        "unit": "càc",
+        "optionnel": true
+      }
+    ],
+    "steps": [
+      "Faites fondre le beurre. Versez le sucre dans un bol avec le beurre et le zeste des citrons.",
+      "Mélangez sommairement le beurre fondu avec le sucre.",
+      "Ajoutez les oeufs.",
+      "Ajoutez la farine et la levure chimique et le jus de citron.",
+      "Versez la pâte dans un petit moule à cake, légèrement beurré.",
+      "Pendant la cuisson, préparez le glaçage en mélangeant le sucre glace avec le jus de citron",
+      "Après cuisson, emballez-le immédiatement de film étirable pour qu’il conserve toute son humidité.",
+      "Laissez le cake refroidir totalement dans son emballage. Quand il est à température ambiante, versez le glaçage sur le gâteur. Mettez une assiette en dessous pour récupérer l’excédent.",
+      "Lissez le nappage pour qu’il tombe de tous les côtés et qu’il soit fin.",
+      "Remettez le cake au four (100°C 8 minutes) pour sécher le glaçage. Au toucher: le glaçage est bien sec et très doux."
+    ],
+    "notes": "",
+    "four": { "chaleur": 170, "mode": "chaleur tournante", "durée": 45 }
+  },
+  {
+    "id": 7,
+    "name": "Meringue",
+    "ingredients": [
+      { "name": "sucre", "qty": 12.6, "unit": "g", "optionnel": false },
+      { "name": "blanc d'œuf", "qty": 0.2, "unit": "pcs", "optionnel": false },
+      { "name": "pincée de sel", "qty": 0, "unit": "", "optionnel": false }
+    ],
+    "steps": ["battre les blancs et ajouer petit à petit le sucre"],
+    "notes": "1/2h - 1h au four (blanche moelleuse - rose fondante)",
+    "four": { "chaleur": 120, "mode": "chaleur tournante", "durée": 30 }
+  },
+  {
+    "id": 8,
+    "name": "Crêpes",
+    "ingredients": [
+      { "name": "farine", "qty": 50, "unit": "g", "optionnel": false },
+      { "name": "lait", "qty": 100, "unit": "ml", "optionnel": false },
+      { "name": "œufs", "qty": 0.8, "unit": "pcs", "optionnel": false },
+      { "name": "sucre", "qty": 0.4, "unit": "càs", "optionnel": false },
+      { "name": "sel", "qty": 0, "unit": "", "optionnel": false },
+      { "name": "beurre", "qty": 25, "unit": "g", "optionnel": false }
+    ],
+    "steps": ["fondre le beurre", "tout mélanger"],
+    "notes": "pour un peu plus de gout, faire fondre le beurre à la poele pour un beurre noisette",
+    "four": { "chaleur": 0, "mode": "", "durée": 0 }
+  }
+]
