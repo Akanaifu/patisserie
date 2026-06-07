@@ -1,3 +1,6 @@
 fastapi[all]
 sqlmodel
 python-dotenv
+argon2-cffi 
+psycopg2
+psycopg2-binary
