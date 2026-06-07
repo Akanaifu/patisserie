@@ -1,3 +1,5 @@
+\encoding UTF8
+
 BEGIN;
 
 INSERT INTO unite (libele) VALUES
