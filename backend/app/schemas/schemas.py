@@ -40,3 +40,15 @@ class Four(BaseModel):
 
     id: int
     libele: str
+
+
+class Admin(BaseModel):
+    """Schéma du mot de passe pour edit recette"""
+
+    actuel_mdp: str
+
+
+class ChangeAdmin(Admin):
+    """Schéma pour changer de mot de passe"""
+
+    nouveau_mdp: str

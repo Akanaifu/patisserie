@@ -1,5 +1,16 @@
 from sqlalchemy.orm import Session, joinedload
-from .models import Recette, RecetteIngredient, RecetteFour, Ingredient, Unite, ModeFour
+from .models.models import (
+    Recette,
+    RecetteIngredient,
+    RecetteFour,
+    Ingredient,
+    Unite,
+    ModeFour,
+    Admin,
+)
+from .mdp import verify_password, hash_password
+from .schemas.schemas import ChangeAdmin
+from argon2.exceptions import VerifyMismatchError
 
 
 def lister_recettes(db: Session):
@@ -42,6 +53,37 @@ def lister_modes_four(db: Session):
     """Retourne tous les modes de four."""
 
     return db.query(ModeFour).all()
+
+
+def recup_mdp(db: Session):
+    """Retourne le mdp admin."""
+
+    return db.query(Admin).first()
+
+
+def changer_mdp(db: Session, changement_admin: ChangeAdmin):
+    """Changer de mdp"""
+
+    mdp_actuel_db = recup_mdp(db)
+    if mdp_actuel_db is None:
+        return False
+
+    try:
+        if not verify_password(mdp_actuel_db.mdp, changement_admin.actuel_mdp):
+            return False  # ancien mdp incorrect
+    except VerifyMismatchError:
+        return False
+
+    try:
+        if verify_password(mdp_actuel_db.mdp, changement_admin.nouveau_mdp):
+            return False  # nouveau mdp identique à l'ancien
+    except VerifyMismatchError:
+        pass  # normal : les mdp sont différents, on continue
+
+    mdp_actuel_db.mdp = hash_password(changement_admin.nouveau_mdp)
+    db.commit()
+    db.refresh(mdp_actuel_db)
+    return True
 
 
 def lister_mode_four_par_id(db: Session, mode_four_id: int):
