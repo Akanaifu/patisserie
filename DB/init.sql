@@ -8,16 +8,22 @@ CREATE TABLE unite (
     libele  VARCHAR(50) NOT NULL UNIQUE
 );
 
+CREATE TABLE categorie (
+    id      SERIAL PRIMARY KEY,
+    libele  VARCHAR(50) NOT NULL UNIQUE
+);
+
 CREATE TABLE mode_four (
     id      SERIAL PRIMARY KEY,
     libele  VARCHAR(50) NOT NULL UNIQUE
 );
 
 CREATE TABLE recette (
-    id      SERIAL PRIMARY KEY,
-    nom     VARCHAR(150) NOT NULL,
-    etape   TEXT NOT NULL,
-    note    TEXT
+    id       SERIAL PRIMARY KEY,
+    nom      VARCHAR(150) NOT NULL,
+    etape    TEXT NOT NULL,
+    note     TEXT
+    id_categ INT REFERENCES categorie(id)
 );
 
 CREATE TABLE recette_ingredient (

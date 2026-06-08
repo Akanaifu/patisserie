@@ -27,6 +27,7 @@ async def changer_mdp(changement: ChangeAdmin, db: Session = Depends(get_db)):
 
     try:
         if not verify_password(admin.mdp, changement.actuel_mdp):
+            # check si input est le même que celui dans la db
             return False
     except VerifyMismatchError:
         return False

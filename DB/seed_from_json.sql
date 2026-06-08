@@ -10,6 +10,14 @@ INSERT INTO unite (libele) VALUES
     ('càc'),
     ('ml');
 
+INSERT INTO categorie (libele) VALUES
+    ('apéro'),
+    ('entrée'),
+    ('plat'),
+    ('dessert'),
+    ('boisson'),
+    ('ptit dej');
+
 INSERT INTO mode_four (libele) VALUES
     ('chaleur tournante');
 
@@ -38,60 +46,70 @@ INSERT INTO ingredient (nom) VALUES
     ('pincée de sel'),
     ('lait');
 
-INSERT INTO recette (id, nom, etape, note) VALUES
+INSERT INTO recette (id, nom, etape, note, id_categorie) VALUES
     (
         1,
         'Bounty',
         E'1. Tout mélanger\n2. au congélateur 30 minutes\n3. fondre le choco\n4. trempez la pâte puis remettre au congélateur',
-        NULL
+        NULL,
+        4
+
     ),
     (
         2,
         '4 Quart',
         E'1. tout mélanger puis mettre au four',
-        E'un œuf fait environ 60g\nCuisson: 35 min'
+        E'un œuf fait environ 60g\nCuisson: 35 min', 
+        4
     ),
     (
         3,
         'Gâteau choco variante 1',
         E'1. mélanger les œufs, le sucre et la farine\n2. fondre le choco et le beurre (feu doux)\n3. mélanger le tout',
-        E'Cuisson: 30 min'
+        E'Cuisson: 30 min',
+        4
     ),
     (
         9,
         'Gâteau choco variante 2',
         E'1. mélanger les œufs, le sucre, la poudre d''amande et la farine\n2. fondre le choco et le beurre (feu doux)\n3. mélanger le tout',
-        E'Cuisson: 30 min'
+        E'Cuisson: 30 min',
+        4
     ),
     (
         4,
         'Tiramisu',
         E'1. Mélanger les jaunes avec le sucre, ajoutez le mascarpone quand le mélange est blanchâtre\n2. Monter les blancs en neige. Les incorporer progressivement au mélange\n3. Dans un plat, tapisser de biscuits trempés dans le café, mettre une couche de crème. Répéter jusqu''à ne plus avoir de crème\n4. Saupoudrer de cacao puis laisser reposer au frigo min. 2h',
-        NULL
+        NULL,
+        4
     ),
     (
         5,
         'Cookies',
         E'1. Ramollir le beurre (ne pas faire fondre)\n2. Fouettez le beurre mou, la cassonade et le sucre. Quand l''aspect est crémeux, ajouter les œufs\n3. Ajoutez la farine, le cacao, le sel. Mélanger puis ajoutez les pépites\n4. Faire des boules de pâte sur du papier sulfurisé (plus ou moins 25g)\n5. 8'' (fondant) - 12'' (croustillant) au four. Laissez refroidir',
-        E'8 minutes -> fondant\n12 minutes -> croustillant\nCuisson: 8 min'
+        E'8 minutes -> fondant\n12 minutes -> croustillant\nCuisson: 8 min',
+        4
     ),
     (
         6,
         'Cake citron',
         E'1. Faites fondre le beurre. Versez le sucre dans un bol avec le beurre et le zeste des citrons.\n2. Mélangez sommairement le beurre fondu avec le sucre.\n3. Ajoutez les œufs.\n4. Ajoutez la farine et la levure chimique et le jus de citron.\n5. Versez la pâte dans un petit moule à cake, légèrement beurré.\n6. Pendant la cuisson, préparez le glaçage en mélangeant le sucre glace avec le jus de citron\n7. Après cuisson, emballez-le immédiatement de film étirable pour qu''il conserve toute son humidité.\n8. Laissez le cake refroidir totalement dans son emballage. Quand il est à température ambiante, versez le glaçage sur le gâteau. Mettez une assiette en dessous pour récupérer l''excédent.\n9. Lissez le nappage pour qu''il tombe de tous les côtés et qu''il soit fin.\n10. Remettez le cake au four (100°C 8 minutes) pour sécher le glaçage. Au toucher: le glaçage est bien sec et très doux.',
-        E'Cuisson: 45 min'
+        E'Cuisson: 45 min',
+        4
     ),
     (
         7,
         'Meringue',
         E'1. Battre les blancs et ajouter petit à petit le sucre',
-        E'1/2h - 1h au four (blanche moelleuse - rose fondante)\nCuisson: 30 min'
+        E'1/2h - 1h au four (blanche moelleuse - rose fondante)\nCuisson: 30 min',
+        4
     ),
     (
         8,
         'Crêpes',
         E'1. Fondre le beurre\n2. tout mélanger',
-        E'pour un peu plus de goût, faire fondre le beurre à la poêle pour un beurre noisette'
+        E'pour un peu plus de goût, faire fondre le beurre à la poêle pour un beurre noisette',
+        4
     );
 
 INSERT INTO recette_ingredient (id_recette, id_ingredient, id_unite, qte, optionnel) VALUES
