@@ -28,6 +28,7 @@ async def lister_detail_recette(recette_id: int, db: Session = Depends(get_db)):
             joinedload(Recette.ingredients).joinedload(RecetteIngredient.ingredient),
             joinedload(Recette.ingredients).joinedload(RecetteIngredient.unite),
             joinedload(Recette.fours).joinedload(RecetteFour.mode_four),
+            joinedload(Recette.categorie),
         )
         .filter(Recette.id == recette_id)
         .first()
@@ -38,6 +39,7 @@ async def lister_detail_recette(recette_id: int, db: Session = Depends(get_db)):
         "nom": recette.nom,
         "etape": recette.etape,
         "note": recette.note,
+        "categorie": recette.categorie,
         "ingredients": [
             {
                 "ingredient": l.ingredient.nom,

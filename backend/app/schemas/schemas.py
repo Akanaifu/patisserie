@@ -10,6 +10,13 @@ class Recette(BaseModel):
     note: Optional[str] = None
 
 
+class CategorieSchema(BaseModel):
+    """schéma des catégories des recettes"""
+
+    id: int
+    libele: str
+
+
 class CreerRecette(Recette):
     """Payload de creation d'une recette."""
 
@@ -19,6 +26,7 @@ class FullRecette(Recette):
 
     ingredients: list[dict]
     fours: list[dict]
+    categorie: Optional[CategorieSchema] = None
 
 
 class Ingredient(BaseModel):

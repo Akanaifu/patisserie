@@ -25,6 +25,13 @@ class Unite(Base):
     recettes = relationship("RecetteIngredient", back_populates="unite")
 
 
+class Categorie(Base):
+    __tablename__ = "categorie"
+    id = Column(Integer, primary_key=True, index=True)
+    libele = Column(VARCHAR(50), nullable=False, unique=True)
+    recettes = relationship("Recette", back_populates="categorie")
+
+
 class ModeFour(Base):
     __tablename__ = "mode_four"
     id = Column(Integer, primary_key=True, index=True)
@@ -38,6 +45,7 @@ class Recette(Base):
     nom = Column(VARCHAR(150), nullable=False)
     etape = Column(Text, nullable=False)
     note = Column(Text)
+    id_categorie = Column(Integer, ForeignKey("categorie.id"))
     ingredients = relationship(
         "RecetteIngredient",
         back_populates="recette",
@@ -48,6 +56,7 @@ class Recette(Base):
         back_populates="recette",
         cascade="all, delete-orphan",
     )
+    categorie = relationship("Categorie", back_populates="recettes")
 
 
 class Admin(Base):
