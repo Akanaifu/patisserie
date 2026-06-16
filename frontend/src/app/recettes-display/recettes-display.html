@@ -1,0 +1,16 @@
+<section class="recettes-section">
+  <div class="list">
+    @for (recette of recettes; track recette.id) {
+      <mat-card class="recette-card" [routerLink]="['/RecetteDetails', recette.id]">
+        <mat-card-header>
+          <mat-card-title>{{ recette.nom }}</mat-card-title>
+        </mat-card-header>
+        <img mat-card-image [src]="recette.img" alt="img_{{ recette.nom }}" />
+        <!-- <mat-card-actions>
+          <button matButton>LIKE</button>
+          <button matButton>SHARE</button>
+        </mat-card-actions> -->
+      </mat-card>
+    }
+  </div>
+</section>

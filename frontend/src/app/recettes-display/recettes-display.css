@@ -1,0 +1,29 @@
+.recette-card {
+  display: flex;
+  width: 80%;
+  margin: 0 auto 4rem;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 70rem;
+  margin: 2rem auto;
+}
+
+img {
+  width: 100%;
+}
+
+@media (max-width: 700px) {
+  .list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (max-width: 1000px) {
+  .list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
