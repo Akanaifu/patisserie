@@ -5,6 +5,7 @@ from typing import Optional
 class Recette(BaseModel):
     """Schema minimal d'une recette."""
 
+    id: int
     nom: str
     etape: str
     note: Optional[str] = None

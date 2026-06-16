@@ -10,4 +10,10 @@
    5. [x] boisson
    6. [x] p'tit dej
 6. [ ] tuto angular pour page accueil
+   1. [x] display recettes
+   2. [x] redirection page détail
 7. [ ] ajouter img pour recette, ingrédient
+   1. [x] ajouter des phots en dur dans frontend/public
+   2. [ ] ajouter dans la db
+8. [ ] display détail recette
+9. [ ] connecter front et back
